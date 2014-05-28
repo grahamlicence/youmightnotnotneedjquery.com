@@ -26,7 +26,10 @@ h1 {
     text-align: center;
     font-size: 1em;
 }
-h1 span {
+h1 em {
+    font-style: normal;
+}
+h1 > em {
     transition: width 0.3s;
     display: inline-block;
     overflow: hidden;
@@ -35,8 +38,12 @@ h1 span {
     top: 3px;
     height: 16px;
 }
-h1:hover span {
+h1:hover > em {
     width: 0;
+}
+h1 em em {
+    width: 55px;
+    display: inline-block;
 }
 
 a { color: #275da1; }
@@ -61,10 +68,13 @@ dd {
     h1 {
         font-size: 2em;
     }
-    h1 span {
+    h1 > em {
         width: 108px;
         top: 5px;
         height: 32px;
+    }
+    h1 em em {
+        width: 107px;
     }
 }
 
