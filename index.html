@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en-gb">
+<head>
+    <title>You might not not need jQuery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <link rel="canonical" href="http://www.youmightnotnotneedjquery.com/" />
+</head>
+<body>
+    <header>
+        <h1>You might <span>not not</span> need jQuery</h1>
+    </header>
+
+    <main>
+        <section>
+            <h2>
+                Are you developing a library?
+            </h2> 
+
+            <h3>No?</h3>
+            <p>
+                Did you read the second paragraph on <a href="http://www.youmightnotneedjquery.com" title="You might not need jQuery">that site?</a>
+            </p>
+            <p>
+                Because you're probably not, so be careful of confusing yourself. The site is useful to understand what jQuery is doing and one of many starting points to get further into JavaScript after using jQuery.
+            </p>
+            <p>
+                You can still use jQuery on your mum's website. And your clients. See the <a href="https://news.ycombinator.com/item?id=7152068">HN thread</a> on that site.
+            </p>
+            <p>
+                A better thought would be that <em>you might not need that jQuery plugin</em>.
+            </p>
+            
+            <h3>Yes?</h3>
+            <p>
+                Then <a href="http://www.youmightnotneedjquery.com" title="You might not need jQuery">that site</a> has a good message for you.
+            </p>
+            <p>
+                Take a look at <a href="http://wicky.nillia.ms/headroom.js/">headroom.js</a> which is an example of a good widget. There's a vanilla JS default, a jQuery/Zepto and Angular options. It's nice when you use things that just work out of the box.
+            </p>    
+        </section>
+
+        <section>
+            <h2>
+                Don't reinvent the wheel
+            </h2>
+            <p>
+                You <em>might not</em> need jQuery is not the same as you <em>don't need</em> jQuery. 
+                Do you really want to spend your time testing your simpler selector rather than working on other stuff?
+            </p>
+            <p>
+                Don't forget about other ways of doing things, like only animating with CSS. Much the same as not creating rounded corners using images. 
+            </p>
+            <p>
+                You might not need to support older browsers, in which case use a library that doesn't have old browser support. Like Zepto. Or jQuery 2. 
+                Don't get stuck scaling.
+            </p>
+            <p>
+                Using a (slightly) smaller different library with a similar syntax means you can switch library more easily if more extensive browser or feature support is needed during a project lifetime.
+            </p>
+        </section>
+
+        <section>
+            <h2>
+                The questions the questions
+            </h2>
+            <dl>
+                <dt>But I don't want to lump everything in document.ready()</dt>
+                <dd>If your JS is at the bottom of the page, by the time the browser gets to it the rest of the DOM has loaded, the document is indeed ready so you don't need this.</dd>
+
+                <dt>But I don't use xx feature (ie dblclick)</dt>
+                <dd>But you do use yy feature, which shares a bunch of stuff with xx feature in the code. </dd>
+
+                <dt>Oh my gods the filesize!</dt>
+                <dd>..in the jpeg you just added. Think of all the other libraries you could have added instead</dd>
+            </dl>
+
+            <blockquote class="twitter-tweet" lang="en"><p>You Might Not Need jQuery! … assuming you&#39;ll address these bugs in your hand-written code: <a href="https://t.co/j2hrG2nCpX">https://t.co/j2hrG2nCpX</a></p>&mdash; Paul Irish (@paul_irish) <a href="https://twitter.com/paul_irish/statuses/431584056883429376">February 7, 2014</a></blockquote>
+            <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+        </section>
+    </main>
+    
+    <footer>
+        <p>Inspired by ADAM J. SONTAG's lovely locks</p>
+        <p>Contributions welcome through <a href="">github</a></p>
+        <p>Made by <a href="http://www.twitter.com/grahamlicence">Graham Licence</a></p>
+    </footer>
+    <script>
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+      (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+      m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+      })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+      ga('create', 'UA-51412975-1', 'youmightnotnotneedjquery.com');
+      ga('send', 'pageview');
+
+    </script>
+</body>
+</html>
