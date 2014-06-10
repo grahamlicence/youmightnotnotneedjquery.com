@@ -15,6 +15,14 @@ header {
     color: #fff;
 }
 
+.github-ribbon {
+    position: fixed;
+    top: 40px;
+    right: 0;
+    border: 0;
+    width: 100px;
+}
+
 main {
     padding: 0 1em;
     max-width: 900px;
@@ -57,10 +65,24 @@ dd {
 }
 
 
+footer {
+    padding: 0.5em;
+    font-size: 85%;
+}
+
+footer p {
+    margin: 0 0.3em 0.1em 0;
+    display: inline-block;
+}
+
 @media (min-width:480px) {
 
     body {
         padding-top: 4.5em;
+    }
+    .github-ribbon {
+        width: auto;
+        top: 80px;
     }
     main {
         padding: 0 2em;
@@ -77,13 +99,8 @@ dd {
         width: 107px;
     }
 }
-
-footer {
-    padding: 0.5em;
-    font-size: 85%;
-}
-
-footer p {
-    margin: 0 0.3em 0.1em 0;
-    display: inline-block;
+@media (min-width:700px) {
+    .github-ribbon {
+        top: 0;
+    }
 }
