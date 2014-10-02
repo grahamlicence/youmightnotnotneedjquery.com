@@ -109,12 +109,12 @@ footer a:hover, footer a:focus {
         font-size: 2em;
     }
     h1 > em {
-        width: 108px;
+        width: 114px;
         top: 5px;
         height: 32px;
     }
     h1 em em {
-        width: 112px;
+        width: 109px;
     }
 }
 @media (min-width:700px) {
